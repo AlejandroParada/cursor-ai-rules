@@ -1,0 +1,9 @@
+# Regla: manejo-robusto
+
+## Descripción
+Manejo adecuado de errores para evitar comportamientos inesperados.
+
+## Regla
+- Siempre usar `set -euo pipefail`.
+- Captura el código de error con `$?` después de comandos críticos.
+- Implementar mensajes de error y salidas controladas con `exit 1` cuando sea necesario.

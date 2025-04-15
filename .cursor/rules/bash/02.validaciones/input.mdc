@@ -1,0 +1,9 @@
+# Regla: input
+
+## Descripción
+Validación adecuada de argumentos en scripts de shell.
+
+## Regla
+- Usar `"$#"` para contar argumentos y mostrar mensajes de error claros si faltan.
+- Preferir `getopts` para scripts con flags y opciones múltiples.
+- Validar rutas, existencia de archivos, y permisos antes de operar con ellos.

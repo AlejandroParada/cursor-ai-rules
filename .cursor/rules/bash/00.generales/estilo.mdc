@@ -1,0 +1,12 @@
+# Regla: estilo
+
+## Descripción
+Establece las convenciones de estilo general para scripts Bash en este proyecto.
+
+## Regla
+- Usa siempre `#!/bin/bash` como línea shebang inicial.
+- Nombra funciones y scripts en snake_case.
+- Usa comillas dobles `"..."` para evitar expansión indeseada de variables.
+- Declara variables con nombres significativos y en minúsculas.
+- Incluye comentarios para cada bloque lógico importante del script.
+- Usa `set -euo pipefail` al inicio para manejar errores correctamente.

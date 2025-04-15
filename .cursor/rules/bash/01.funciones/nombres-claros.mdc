@@ -1,0 +1,9 @@
+# Regla: nombres-claros
+
+## Descripción
+Asegura que las funciones en Bash tengan nombres descriptivos y claros.
+
+## Regla
+- El nombre debe reflejar la acción principal: `check_dependencies`, `create_backup`, etc.
+- Evitar abreviaciones innecesarias.
+- Comenzar funciones con verbo en presente y usar `_` como separador.

@@ -1,0 +1,9 @@
+# Regla: evitar-inyeccion
+
+## Descripción
+Evita la ejecución de comandos inseguros o entrada inyectada.
+
+## Regla
+- Nunca evalúes entrada directa del usuario con `eval`.
+- Escapa variables en comandos, especialmente si se usan rutas o strings proporcionados por el usuario.
+- Usa comillas dobles `"${var}"` y `$(...)` en vez de backticks \`...\`.
