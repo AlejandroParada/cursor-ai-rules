@@ -1,0 +1,21 @@
+
+# .cursor/rules/authentication-jwt.mdc
+
+## Rule: Use Microsoft.AspNetCore.Authentication.JwtBearer
+- Configure authentication middleware using the built-in JWT bearer handler.
+- Do not add custom token validation logic unless asked.
+
+## Rule: Token Handling
+- Use standard claims: sub (user id), name, role, exp, iat.
+- Do not expose sensitive data in JWT payload.
+
+## Rule: Authorization Attributes
+- Use [Authorize] on controllers or actions where needed.
+- Do not remove or modify existing [Authorize] attributes without explicit instruction.
+
+## Rule: Token Creation
+- When generating JWTs, always include expiry (exp).
+- Sign tokens using a symmetric key stored securely (e.g., via configuration or secrets manager).
+
+## Rule: Secure Endpoints
+- Do not allow anonymous access to protected endpoints unless marked with [AllowAnonymous].

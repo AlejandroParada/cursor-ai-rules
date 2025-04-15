@@ -1,0 +1,17 @@
+
+# .cursor/rules/api-rest.mdc
+
+## Rule: API Naming
+- Follow RESTful naming conventions: nouns, plural form (e.g., /users, /products).
+- Use route attributes instead of relying solely on naming conventions when required.
+
+## Rule: HTTP Verbs
+- Use [HttpGet], [HttpPost], [HttpPut], [HttpDelete] explicitly for endpoints.
+- Do not mix responsibilities in the same method.
+
+## Rule: Consistent Response Format
+- Return IActionResult or ActionResult<T> consistently.
+- Use Ok(), NotFound(), BadRequest(), etc. instead of raw return statements.
+
+## Rule: Versioning
+- If API versioning is used, preserve the version in the controller route (e.g., [Route("api/v1/[controller]")]).

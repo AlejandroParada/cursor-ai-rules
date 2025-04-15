@@ -1,0 +1,22 @@
+
+# .cursor/rules/entity-framework.mdc
+
+## Rule: DbContext Usage
+- Do not instantiate DbContext directly; use dependency injection.
+- Respect existing OnModelCreating configurations.
+
+## Rule: Migrations
+- Do not generate or apply EF Core migrations unless asked.
+- Never remove existing migrations.
+
+## Rule: Asynchronous Code
+- Prefer async methods (e.g., ToListAsync, SaveChangesAsync) for DB operations.
+- Do not mix async and sync calls in the same method.
+
+## Rule: Tracking and Performance
+- Use .AsNoTracking() for read-only queries.
+- Avoid loading large datasets into memory unnecessarily.
+
+## Rule: Relationship Mapping
+- Preserve existing relationships (One-to-Many, Many-to-Many) unless asked to modify.
+- When defining navigation properties, configure both sides clearly.

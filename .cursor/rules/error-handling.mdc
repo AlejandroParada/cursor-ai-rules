@@ -1,0 +1,17 @@
+
+# .cursor/rules/error-handling.mdc
+
+## Rule: Use Global Exception Handling
+- Centralize exception handling using `UseExceptionHandler` or custom middleware.
+- Do not handle exceptions locally unless necessary.
+
+## Rule: Custom Error Responses
+- Do not expose internal exception messages to clients.
+- Return structured error responses with status code and message.
+
+## Rule: Logging Exceptions
+- Always log unhandled exceptions at the Error level.
+- Include stack trace and relevant context (request path, user info if available).
+
+## Rule: Fallbacks
+- Provide fallback logic or error-specific responses where necessary (e.g., for database failures, timeouts).

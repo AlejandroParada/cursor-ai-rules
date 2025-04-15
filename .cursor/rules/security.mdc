@@ -1,0 +1,20 @@
+
+# .cursor/rules/security.mdc
+
+## Rule: Never Log Sensitive Data
+- Do not log passwords, tokens, connection strings or personal data.
+- Redact or exclude sensitive fields in logs and exceptions.
+
+## Rule: Validate Input
+- Always validate model inputs using [Required], [StringLength], [Range], etc.
+- Use FluentValidation or custom filters for complex scenarios.
+
+## Rule: Protect Against Injection
+- Use parameterized queries with EF Core to prevent SQL injection.
+- Do not allow raw SQL queries unless absolutely necessary.
+
+## Rule: HTTPS Only
+- Ensure redirection to HTTPS is enabled and enforced via middleware.
+
+## Rule: Secure Headers
+- If modifying HTTP headers, include security headers like `X-Content-Type-Options`, `X-Frame-Options`, etc.

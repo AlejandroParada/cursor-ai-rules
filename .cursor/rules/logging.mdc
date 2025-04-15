@@ -1,0 +1,18 @@
+
+# .cursor/rules/logging.mdc
+
+## Rule: Use ILogger
+- Always use ILogger<T> for logging within services and controllers.
+- Do not use Console.WriteLine or Debug.WriteLine.
+
+## Rule: Log Levels
+- Use appropriate log levels: Information, Warning, Error, Critical.
+- Do not log everything as Error.
+
+## Rule: Do Not Overlog
+- Avoid logging within tight loops or inside every method call.
+- Log only significant events, exceptions, or state transitions.
+
+## Rule: Structured Logging
+- Use structured logging with named placeholders (e.g., "User {UserId} created successfully").
+- Avoid concatenating strings for logs.
